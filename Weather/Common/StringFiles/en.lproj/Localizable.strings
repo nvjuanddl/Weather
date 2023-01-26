@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Weather
+
+  Created by Juan Dario Delgado L on 25/01/23.
+  
+*/
+
+"locationWeatherDetail.noInternetConection" = "There is no Internet conection";
+"locationWeatherDetail.tryAgainLater" = "We are sorry for this inconvenience, please try again later.";
+"locationWeatherDetail.tryAgain" = "Try again";
+
+"locationWeatherFinder.noInternetConection" = "There is no Internet conection";
+"locationWeatherFinder.tryAgainLater" = "We are sorry for this inconvenience, please try again later.";
+"locationWeatherFinder.tryAgain" = "Try again";
+"locationWeatherFinder.searcLocations" = "Search Locations";
+"locationWeatherFinder.title" = "Weather";
