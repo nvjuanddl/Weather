@@ -13,8 +13,4 @@ target 'Weather' do
     # Pods for testing
   end
 
-  target 'WeatherUITests' do
-    # Pods for testing
-  end
-
 end
