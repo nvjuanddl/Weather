@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "splash.pdf",
       "idiom" : "universal"
     }
   ],
