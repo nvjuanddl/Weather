@@ -5,7 +5,7 @@ target 'Weather' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '5.5.0'
-  pod 'Kingfisher', '7.2.1'
+  pod 'Kingfisher', '6.3.0'
   # Pods for Weather
 
   target 'WeatherTests' do

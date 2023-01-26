@@ -100,14 +100,20 @@ class LocationWeatherFinderViewController: UIViewController {
     }
     
     private func setUpNavigationBar() {
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .black
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        appearance.titleTextAttributes = titleTextAttributes
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
-        navigationController?.navigationBar.backgroundColor = .black
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.titleTextAttributes = titleTextAttributes
+            appearance.backgroundColor = .black
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
+            
+        } else {
+            navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+            navigationController?.navigationBar.backgroundColor = .black
+        }
+        
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         title = NSLocalizedString("locationWeatherFinder.title", comment: "")
